@@ -48,13 +48,44 @@
 @media(max-width:900px){.metrics,.proof-grid{grid-template-columns:1fr 1fr}.engine-loop{grid-template-columns:1fr}.engine-arrow{transform:rotate(90deg);text-align:center}}
 @media(max-width:560px){.metrics,.proof-grid{grid-template-columns:1fr}.engine-title{font-size:42px}}
 
+
+/* Magnet Club community engine */
+.community-engine{position:relative;overflow:hidden;background:radial-gradient(circle at 12% 10%,rgba(124,60,255,.20),transparent 32%),radial-gradient(circle at 90% 85%,rgba(49,92,255,.16),transparent 30%),linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018))}
+.community-hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+.community-title{font-size:clamp(42px,6vw,76px);line-height:.95;letter-spacing:-.06em;margin:10px 0 18px}
+.community-title span{background:linear-gradient(90deg,#fff 5%,#a66bff 48%,#39dfff 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.community-copy{color:#aeb4c3;font-size:18px;line-height:1.7;max-width:720px}
+.discord-panel{border:1px solid rgba(124,92,255,.45);border-radius:24px;padding:26px;background:rgba(8,9,14,.58);box-shadow:0 0 70px rgba(100,70,255,.14)}
+.discord-badge{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.15em;font-weight:950;color:#d9dcff;border:1px solid rgba(124,92,255,.38);padding:8px 11px;border-radius:999px;background:rgba(124,92,255,.08)}
+.discord-panel h3{font-size:30px;margin:16px 0 10px;letter-spacing:-.04em}
+.discord-panel p{color:#9da4b5;line-height:1.6}
+.discord-cta{width:100%;margin-top:12px}
+.creator-flow{display:grid;grid-template-columns:repeat(7,auto);align-items:stretch;justify-content:space-between;gap:10px;margin-top:30px}
+.creator-step{min-width:125px;border:1px solid var(--line);border-radius:18px;padding:18px 13px;background:rgba(6,7,11,.58)}
+.creator-step .step-no{font-size:10px;letter-spacing:.14em;color:#8d75ff;font-weight:950}
+.creator-step strong{display:block;font-size:16px;margin:8px 0 6px}
+.creator-step small{display:block;color:#747c8e;line-height:1.4}
+.creator-arrow{display:grid;place-items:center;color:#7d63ff;font-size:24px}
+.category-grid{grid-template-columns:repeat(4,1fr);margin-top:18px}
+.category-card{min-height:150px}
+.category-icon{font-size:26px;margin-bottom:10px}
+.category-card strong{font-size:17px}
+.category-card p{font-size:13px;line-height:1.5;color:#7f8798;margin:8px 0 0}
+.mission-strip{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:22px;padding:24px 26px;border:1px solid rgba(57,223,255,.20);border-radius:22px;background:linear-gradient(90deg,rgba(49,92,255,.10),rgba(124,60,255,.10))}
+.mission-strip strong{font-size:24px;letter-spacing:-.03em}
+.mission-strip p{margin:6px 0 0;color:#8e96a8;max-width:760px;line-height:1.55}
+.mission-pill{white-space:nowrap;border:1px solid var(--line);padding:10px 13px;border-radius:999px;color:#cfd3df;font-size:11px;font-weight:900;letter-spacing:.12em}
+.socials{margin-top:22px}
+@media(max-width:900px){.community-hero{grid-template-columns:1fr}.creator-flow{grid-template-columns:1fr}.creator-arrow{transform:rotate(90deg)}.category-grid{grid-template-columns:1fr 1fr}.mission-strip{display:block}.mission-pill{display:inline-block;margin-top:16px}}
+@media(max-width:560px){.category-grid{grid-template-columns:1fr}.community-copy{font-size:16px}.community-title{font-size:44px}}
+
 </style>
 </head>
 <body>
 <nav class="nav"><div class="wrap"><a class="brand" href="#"><img class="logo" src="krypton-logo.svg" alt="KRYPTON logo">KRYPTON</a><div class="links"><a href="#story">Story</a><a href="#field">Field</a><a href="#usepaid">UsePaid</a><a href="#roadmap">Roadmap</a><a href="#community">Community</a></div><a class="nav-cta" href="#community">JOIN THE FIELD</a></div></nav>
 <main>
 <section class="hero wrap">
-<div><div class="eyebrow"><i class="dot"></i> THE MAGNET HAS BEEN ACTIVATED</div><h1><span>KRYPTON</span><br>THE MONEY MAGNET.</h1><p>We don't chase money. Money comes to us. KRYPTON is a community-powered meme token built around one simple idea: <b>stop chasing, start attracting.</b></p><div class="hero-actions"><a class="btn" id="buyBtn" href="#" onclick="return handleBuy(event)">BUY $KRYPTON</a><a class="btn secondary" href="#community">ENTER THE MAGNET CLUB</a></div><div class="contract"><div class="contract-box" id="ca">CONTRACT ADDRESS — ADD AFTER LAUNCH</div><button class="copy" onclick="copyCA()">COPY</button></div><div class="mini">Built for memes. Powered by community. No promise of profit or guaranteed returns.</div></div>
+<div><div class="eyebrow"><i class="dot"></i> THE MAGNET HAS BEEN ACTIVATED</div><h1><span>KRYPTON</span><br>THE MONEY MAGNET.</h1><p>We don't chase money. Money comes to us. KRYPTON is a community-powered meme token where holders don't just watch — they help build the attention engine. <b>Join the Magnet Club. Create. Vote. Amplify.</b></p><div class="hero-actions"><a class="btn" id="buyBtn" href="#" onclick="return handleBuy(event)">BUY $KRYPTON</a><a class="btn secondary" href="#community">JOIN THE DISCORD COMMUNITY</a></div><div class="contract"><div class="contract-box" id="ca">CONTRACT ADDRESS — ADD AFTER LAUNCH</div><button class="copy" onclick="copyCA()">COPY</button></div><div class="mini">Built for memes. Powered by community. No promise of profit or guaranteed returns.</div></div>
 <div class="stage"><div class="ring r3"></div><div class="ring r2"></div><div class="ring r1"></div><div class="money m1">💵</div><div class="money m2">💸</div><div class="money m3">💰</div><div class="money m4">💵</div><img class="magnet" src="krypton-logo.svg" alt="KRYPTON Money Magnet logo"></div>
 </section>
 <section class="section wrap" id="field">
@@ -115,7 +146,58 @@
 </section>
 
 <section class="section wrap" id="roadmap"><div class="section-head"><div><div class="kicker">ROADMAP</div><h2>The field expands.</h2></div><p class="lead">No fake utility. No endless promises. The roadmap is about attention, community and a recognizable meme universe.</p></div><div class="grid roadmap"><div class="card phase"><div class="phase-num">PHASE 01 · SPARK</div><h3>Activate</h3><p>Launch the identity, website, socials and first meme wave. Establish the Magnet Club.</p></div><div class="card phase"><div class="phase-num">PHASE 02 · ATTRACTION</div><h3>Spread</h3><p>Scale short-form content, community events, creator collaborations and meme formats.</p></div><div class="card phase"><div class="phase-num">PHASE 03 · FIELD</div><h3>Expand</h3><p>Turn KRYPTON into a recognizable internet-native community across platforms.</p></div><div class="card phase"><div class="phase-num">PHASE 04 · STORM</div><h3>Go Global</h3><p>Push the Magnetic Field beyond crypto-native audiences and into mainstream meme culture.</p></div></div></section>
-<section class="section wrap" id="community"><div class="section-head"><div><div class="kicker">JOIN THE FIELD</div><h2>Become a Magnet.</h2></div><p class="lead">Join KRYPTON across our official channels and step into the Magnetic Field.</p></div><div class="grid socials"><a class="card social" href="https://discord.gg/6eWhpJabV" target="_blank" rel="noopener noreferrer"><div><b>Discord</b><br><span>THE MAGNET CLUB</span></div><b>↗</b></a><a class="card social" href="https://www.instagram.com/krypton_the_magnet/" target="_blank" rel="noopener noreferrer"><div><b>Instagram</b><br><span>MEME ENGINE</span></div><b>↗</b></a><a class="card social" href="https://x.com/KRYPTON_MAGNET" target="_blank" rel="noopener noreferrer"><div><b>X</b><br><span>@KRYPTON_MAGNET</span></div><b>↗</b></a></div></section>
+<section class="section wrap" id="community">
+<div class="card community-engine">
+  <div class="community-hero">
+    <div>
+      <div class="kicker">THE MAGNET CLUB · DISCORD</div>
+      <h2 class="community-title">HOLDERS DON'T JUST HOLD.<br><span>THEY BUILD THE SIGNAL.</span></h2>
+      <p class="community-copy">The KRYPTON community lives in Discord. Holders join the Magnet Club, create and submit short-form videos into dedicated content categories, and the community decides what deserves to go further.</p>
+      <p class="community-copy">The highest-voted videos are selected for KRYPTON's official Instagram and TikTok distribution. Every winning video is another chance to reach people outside crypto, bring new attention back to KRYPTON, and invite more creators and holders into the Magnetic Field.</p>
+    </div>
+
+    <div class="discord-panel">
+      <div class="discord-badge">● COMMUNITY HQ</div>
+      <h3>Enter the Magnet Club</h3>
+      <p>If you hold KRYPTON, Discord is where you can participate: submit content, vote, help choose the strongest videos, and shape the public face of the project.</p>
+      <a class="btn discord-cta" href="https://discord.gg/6eWhpJabV" target="_blank" rel="noopener noreferrer">JOIN KRYPTON DISCORD →</a>
+    </div>
+  </div>
+
+  <div class="creator-flow">
+    <div class="creator-step"><div class="step-no">01</div><strong>HOLD</strong><small>Become part of the KRYPTON community.</small></div>
+    <div class="creator-arrow">→</div>
+    <div class="creator-step"><div class="step-no">02</div><strong>JOIN DISCORD</strong><small>Enter the Magnet Club community hub.</small></div>
+    <div class="creator-arrow">→</div>
+    <div class="creator-step"><div class="step-no">03</div><strong>CREATE</strong><small>Submit videos into themed content categories.</small></div>
+    <div class="creator-arrow">→</div>
+    <div class="creator-step"><div class="step-no">04</div><strong>COMMUNITY VOTES</strong><small>Magnets vote for the strongest submissions.</small></div>
+    <div class="creator-arrow">→</div>
+    <div class="creator-step"><div class="step-no">05</div><strong>WINNERS PUBLISH</strong><small>Top videos move to Instagram and TikTok.</small></div>
+  </div>
+
+  <div class="grid category-grid">
+    <div class="card category-card"><div class="category-icon">😂</div><strong>MEMES</strong><p>Fast, relatable, shareable content designed for internet culture.</p></div>
+    <div class="card category-card"><div class="category-icon">🧲</div><strong>KRYPTON LORE</strong><p>Money-magnet concepts, community jokes and Magnetic Field storytelling.</p></div>
+    <div class="card category-card"><div class="category-icon">🎬</div><strong>SHORT VIDEOS</strong><p>Reels and TikToks built around trends, hooks and repeatable formats.</p></div>
+    <div class="card category-card"><div class="category-icon">⚡</div><strong>WILD CARDS</strong><p>Unexpected creative ideas that don't fit a box but can still go viral.</p></div>
+  </div>
+
+  <div class="mission-strip">
+    <div>
+      <strong>One community. One content engine. One shared mission.</strong>
+      <p>KRYPTON's ambition is to build the biggest community-powered meme-coin media machine we can — by turning holders into participants and attention into a constantly expanding Magnetic Field. Attention and community growth do not guarantee token price performance.</p>
+    </div>
+    <div class="mission-pill">THE FIELD EXPANDS</div>
+  </div>
+
+  <div class="grid socials">
+    <a class="card social" href="https://discord.gg/6eWhpJabV" target="_blank" rel="noopener noreferrer"><div><b>Discord</b><br><span>COMMUNITY HQ</span></div><b>↗</b></a>
+    <a class="card social" href="https://www.instagram.com/krypton_the_magnet/" target="_blank" rel="noopener noreferrer"><div><b>Instagram</b><br><span>WINNING CONTENT</span></div><b>↗</b></a>
+    <a class="card social" href="https://x.com/KRYPTON_MAGNET" target="_blank" rel="noopener noreferrer"><div><b>X</b><br><span>@KRYPTON_MAGNET</span></div><b>↗</b></a>
+  </div>
+</div>
+</section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-top"><div class="brand"><img class="logo" src="krypton-logo.svg" alt="KRYPTON logo">KRYPTON</div><div style="font-weight:950;color:#c5c9d4">STOP CHASING. START ATTRACTING.</div></div><p class="fine">KRYPTON is a meme/community token. Nothing on this website is financial, investment, legal or tax advice, and nothing should be interpreted as a promise or guarantee of profit, price appreciation or future market performance. Crypto assets are highly speculative and can lose value. Verify contract addresses and transaction details independently before interacting with any token.</p><div style="margin-top:25px;font-size:11px">© 2026 KRYPTON. The Magnetic Field.</div></div></footer>
 <script>
