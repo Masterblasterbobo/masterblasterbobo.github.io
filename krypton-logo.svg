@@ -1,34 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-<title id="title">KRYPTON Money Magnet</title>
-<desc id="desc">Neon K and magnet emblem on a transparent background</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
 <defs>
-  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#a02cff"/><stop offset=".46" stop-color="#315cff"/><stop offset="1" stop-color="#30e5ff"/>
+  <linearGradient id="mag" x1="70" y1="430" x2="430" y2="70" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#8E2CFF"/><stop offset=".45" stop-color="#174CFF"/><stop offset="1" stop-color="#2FE6FF"/>
+  </linearGradient>
+  <linearGradient id="k" x1="175" y1="390" x2="410" y2="110" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#9A31FF"/><stop offset=".46" stop-color="#1C54FF"/><stop offset="1" stop-color="#46EEFF"/>
   </linearGradient>
   <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#7c3cff"/><stop offset=".48" stop-color="#174eff"/><stop offset="1" stop-color="#25dfff"/>
+    <stop stop-color="#FFFFFF"/><stop offset=".42" stop-color="#AAB4CC"/><stop offset="1" stop-color="#F4F7FF"/>
   </linearGradient>
-  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#8c93a6"/><stop offset="1" stop-color="#e7ebff"/>
-  </linearGradient>
+  <radialGradient id="coin">
+    <stop stop-color="#5CF5FF"/><stop offset=".48" stop-color="#2A68FF"/><stop offset="1" stop-color="#812CFF"/>
+  </radialGradient>
   <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-    <feGaussianBlur stdDeviation="7" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
-    <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
 </defs>
-<circle cx="256" cy="256" r="213" fill="none" stroke="url(#ring)" stroke-width="8" opacity=".98" filter="url(#glow)"/>
-<circle cx="256" cy="256" r="195" fill="none" stroke="#6b54ff" stroke-width="1.4" opacity=".45"/>
-<!-- horseshoe magnet -->
-<path d="M113 183 C113 135 151 103 199 103 H273 V165 H202 C183 165 169 178 169 197 V315 C169 334 183 347 202 347 H273 V409 H197 C149 409 113 373 113 325 Z"
-      fill="url(#metal)" stroke="#6fe8ff" stroke-width="3" filter="url(#soft)"/>
-<path d="M112 184 C112 136 150 101 199 101 H276" fill="none" stroke="#da6cff" stroke-width="4" opacity=".7"/>
-<rect x="260" y="105" width="58" height="61" rx="9" fill="url(#silver)" stroke="#d8e4ff" stroke-width="3"/>
-<rect x="260" y="346" width="58" height="61" rx="9" fill="url(#silver)" stroke="#d8e4ff" stroke-width="3"/>
-<!-- K -->
-<path d="M286 104 H353 L248 251 L365 407 H294 L184 257 Z" fill="url(#metal)" stroke="#77eaff" stroke-width="3" filter="url(#soft)"/>
-<path d="M349 111 L255 251 L359 397" fill="none" stroke="#fff" stroke-width="3" opacity=".78"/>
-<path d="M286 107 L203 247" fill="none" stroke="#c24fff" stroke-width="4" opacity=".82"/>
+
+<!-- subtle magnetic trails -->
+<g opacity=".58" filter="url(#soft)" stroke-linecap="round">
+  <path d="M390 145C424 150 449 142 472 126" stroke="#57EFFF" stroke-width="8"/>
+  <path d="M397 250C435 250 454 239 484 225" stroke="#60EDFF" stroke-width="10"/>
+  <path d="M392 352C429 349 453 337 476 319" stroke="#65EFFF" stroke-width="8"/>
+</g>
+
+<!-- C-shaped magnet -->
+<path d="M107 169C107 90 171 34 249 34H336V95H249C204 95 168 129 168 173V339C168 383 204 417 249 417H336V478H249C171 478 107 422 107 343V169Z"
+ fill="url(#mag)" stroke="#2DDFFF" stroke-width="2.5" filter="url(#glow)"/>
+<path d="M116 168C116 97 173 43 249 43H333" stroke="#B349FF" stroke-width="4" opacity=".75" stroke-linecap="round"/>
+<path d="M117 344C117 414 175 469 249 469H332" stroke="#37E9FF" stroke-width="4" opacity=".7" stroke-linecap="round"/>
+
+<!-- polished magnet caps -->
+<g filter="url(#soft)">
+  <rect x="326" y="49" width="64" height="58" rx="9" fill="url(#metal)" stroke="#DCE7FF" stroke-width="3"/>
+  <rect x="326" y="405" width="64" height="58" rx="9" fill="url(#metal)" stroke="#DCE7FF" stroke-width="3"/>
+</g>
+
+<!-- K monogram integrated into magnet -->
+<path d="M189 120H252V224L346 120H423L308 239L431 391H354L253 269V391H189V120Z"
+ fill="url(#k)" stroke="#42E8FF" stroke-width="2.5" filter="url(#glow)"/>
+<path d="M198 129V382" stroke="#9AF7FF" stroke-width="3" opacity=".55"/>
+<path d="M257 226L349 126" stroke="#DB6BFF" stroke-width="3" opacity=".7"/>
+<path d="M258 261L357 383" stroke="#6BEFFF" stroke-width="3" opacity=".58"/>
+
+<!-- coins being attracted -->
+<g transform="translate(446 137) rotate(16)" filter="url(#glow)">
+  <ellipse rx="28" ry="23" fill="url(#coin)" stroke="#AEEFFF" stroke-width="2"/>
+  <path d="M-3-10c8 0 13 4 13 10s-5 9-13 10M3-16V16" stroke="#E5FBFF" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(467 255) rotate(9)" filter="url(#glow)">
+  <ellipse rx="39" ry="33" fill="url(#coin)" stroke="#BDF4FF" stroke-width="2.4"/>
+  <path d="M-4-14c10 0 18 5 18 13S7 11-4 12M4-22V22" stroke="#E8FCFF" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g transform="translate(453 360) rotate(-12)" filter="url(#glow)">
+  <ellipse rx="23" ry="19" fill="url(#coin)" stroke="#BDF4FF" stroke-width="1.8"/>
+  <path d="M-2-8c6 0 11 3 11 8s-4 7-11 8M2-13V13" stroke="#E8FCFF" stroke-width="3.4" stroke-linecap="round"/>
+</g>
 </svg>
